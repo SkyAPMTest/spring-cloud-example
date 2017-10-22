@@ -1,27 +1,17 @@
 package org.skywalking.springcloud.test.projecta.vo;
 
 public class Result {
-    private String projectB;
-    private String projectC;
+    private String traceId;
 
-    public Result(String projectB, String projectC) {
-        this.projectB = projectB;
-        this.projectC = projectC;
+    public Result(String traceId) {
+        this.traceId = traceId;
     }
 
-    public String getProjectB() {
-        return projectB;
+    public String getTraceId() {
+        return traceId;
     }
 
-    public void setProjectB(String projectB) {
-        this.projectB = projectB;
-    }
-
-    public String getProjectC() {
-        return projectC;
-    }
-
-    public void setProjectC(String projectC) {
-        this.projectC = projectC;
+    public void setTraceId(String traceId) {
+        this.traceId = traceId;
     }
 }
