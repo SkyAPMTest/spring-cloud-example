@@ -16,7 +16,7 @@ public class ServiceController {
 
     @RequestMapping("/projectB/{value}")
     public String home(@PathVariable("value") String value) throws InterruptedException {
-        Thread.sleep(new Random().nextInt(10) * 1000);
+        Thread.sleep(new Random().nextInt(2) * 1000);
         operateDao.saveUser(value);
         operateDao.selectUser(value);
         return value + "-" + UUID.randomUUID().toString();
